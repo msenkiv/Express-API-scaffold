@@ -10,10 +10,12 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "axios": "^0.19.2",
         "cors": "^2.8.5",
         "express": "^4.17.1",
         "mongoose": "^5.6.3",
         "mongoose-paginate": "^5.0.3",
+        "ngrok": "^3.2.7",
         "nodemon": "^1.19.1",
         "require-dir": "^1.2.0"
     }
