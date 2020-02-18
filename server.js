@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 // starting DB
-mongoose.connect('mongodb+srv://root:root@emaily-o8cjy.gcp.mongodb.net/test?retryWrites=true&w=majority');
+mongoose.connect('PUT YOUR MONGO HERE');
 
 requireDir('./src/models');
 
