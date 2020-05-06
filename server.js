@@ -13,5 +13,5 @@ mongoose.connect('mongodb+srv://root:root@apitestcluster-iynoc.mongodb.net/test?
 requireDir('./src/models');
 
 app.use('/api', require('./src/routes'));
-console.log(3001);
-app.listen(3001);
+var porta = process.env.PORT || 8080;
+app.listen(porta);

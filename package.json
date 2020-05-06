@@ -4,6 +4,7 @@
     "description": "",
     "main": "routes.js",
     "scripts": {
+        "start": "node server",
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon start server.js"
     },
