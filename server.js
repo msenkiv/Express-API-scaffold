@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(express.json());
-
+app.use(cors)
 
 // starting DB
 mongoose.connect('mongodb+srv://root:root@apitestcluster-iynoc.mongodb.net/test?retryWrites=true&w=majority');
