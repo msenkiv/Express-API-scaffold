@@ -8,6 +8,7 @@ module.exports = {
 
     async worker(req,res) {        
         let callback = {};
+        console.log(req.body)
         try{
             callback = await Callback.create(req.body);        
         } catch (e){
