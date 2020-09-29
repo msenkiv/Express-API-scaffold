@@ -8,7 +8,8 @@ const app = express();
 
 
 app.use(express.json());
-
+app.use(cors());
+//aa
 // starting DB
 console.log('BACON FDP')
 console.log('VAI DAIBO')
