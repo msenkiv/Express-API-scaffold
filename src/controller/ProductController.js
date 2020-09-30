@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const routes = require('../routes');
 const Callback = mongoose.model('Callback');
 
 
@@ -16,7 +17,17 @@ module.exports = {
         }
         return res.send(200)
         
-    }
+    },
 
+    async getter(req,res){
+        const resp = await Callback.find()
+        console.log(resp.length)
+
+        res.json({
+            totalDeTrouxas: resp.length,
+            resp          
+
+        })
+    }
 
 }
