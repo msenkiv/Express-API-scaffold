@@ -25,7 +25,6 @@ module.exports = {
 
         res.json({
             totalDeTrouxas: resp.length,
-            resp          
 
         })
     }
